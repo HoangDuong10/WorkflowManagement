@@ -14,9 +14,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Animation topAnim,botAnim;
-    TextView textView;
+    TextView textView1;
     ImageView imageView;
-    CardView cardView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
         botAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
-        textView = (TextView) findViewById(R.id.textView1);
+        textView1 = (TextView ) findViewById(R.id.textview1);
         imageView = (ImageView) findViewById(R.id.imageview1);
-        cardView =(CardView) findViewById(R.id.cardview1);
-        cardView.setAnimation(topAnim);
-        textView.setAnimation(botAnim);
+
+        imageView.setAnimation(topAnim);
+        textView1.setAnimation(botAnim);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },2000);
+        },4000);
+
+
     }
 }
