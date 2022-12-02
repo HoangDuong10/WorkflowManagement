@@ -174,7 +174,7 @@
             android:layout_height="wrap_content"
             android:text="Thứ tự"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/black"/>
 
         <EditText
             android:layout_marginLeft="10dp"
