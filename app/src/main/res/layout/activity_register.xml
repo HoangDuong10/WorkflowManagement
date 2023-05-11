@@ -4,7 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:id="@+id/linear">
 
    <ImageView
        android:layout_width="300dp"
@@ -29,7 +30,8 @@
           android:layout_width="match_parent"
           android:background="@color/white"
           android:layout_height="wrap_content"
-          android:hint="Nhập gmail"/>
+          android:hint="Nhập gmail"
+          android:id="@+id/email"/>
       <View
           android:layout_marginRight="20dp"
           android:layout_marginLeft="50dp"
@@ -46,7 +48,8 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:hint="Tên đăng nhập"
-          android:background="@color/white"/>
+          android:background="@color/white"
+          android:id="@+id/username"/>
       <View
           android:layout_width="match_parent"
           android:layout_height="2dp"
@@ -62,7 +65,8 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:hint="Mật khẩu"
-          android:background="@color/white"/>
+          android:background="@color/white"
+          android:id="@+id/password"/>
       <View
           android:layout_width="match_parent"
           android:layout_height="2dp"
@@ -70,6 +74,17 @@
           android:layout_marginLeft="50dp"
           android:layout_marginRight="20dp"/>
    </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/textview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="15dp"
+       android:text=""
+       android:textSize="16dp"
+       android:visibility="invisible"
+       />
    <Button
        android:layout_marginRight="15dp"
        android:layout_marginLeft="15dp"
